@@ -1,8 +1,0 @@
-function[V] = jonTranspose(X)
-
-[rowN, colN] = size(X)
-for c = 1:colN
-    V(c,c) = X(c, c)
-    for d = 1:rowN
-        V(
-end
