@@ -1,0 +1,7 @@
+function [V] = jonFlip(X)
+
+[rowN, colN] = size
+
+for c = 1:length(X)
+    V(1, c) = X(1, length(X)-c+1);
+end
