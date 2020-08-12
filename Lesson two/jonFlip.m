@@ -4,6 +4,6 @@ function [V] = jonFlip(X)
 
 for b = 1:rowN
     for c = 1:colN
-        V(b, c) = X(rowN-b+1,colN-c+1);
+        V(b, c) = X(end-b+1,end-c+1);
     end
 end
