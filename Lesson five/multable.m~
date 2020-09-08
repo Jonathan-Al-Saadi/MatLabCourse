@@ -1,7 +1,24 @@
 function [table summa] = multable(n, m)
 
+%Multable multiplication table
+% T = Multable(N) returns an N-by-N matrix
+
+persistent error_count;
+if nargin <1
+    error('must have at leats one positive integer');
+end
+
 if nargin < 2
     m = n;
+elseif ~isscalar(m) || m < 1 || m ~= fix(m)
+    error_count = error_count +1;
+    if error_count < 3
+        error('m needs to be a positive integer');
+    else
+        error('Whar part of positive integ)
+end
+if ~isscalar(n) || n < 1 || n ~= fix(n)
+    error('n needs to be a positive integer')
 end
 
 table = (1:n)' * (1:m);
