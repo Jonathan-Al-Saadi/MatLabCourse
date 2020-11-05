@@ -1,0 +1,13 @@
+function indices = saddle(M)
+
+[nrows, ncols] = size(M)
+
+for ii = 1:nrows
+    [~, col] = find(M(ii,:) == max(M(ii,:)))
+    for jj = 1:length(col)
+        [rows ~] = find(M(:,col(jj)) == min(M(:,col(jj))))
+        if M(rows, col(jj)) <=
+    end
+end
+
+
